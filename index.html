@@ -123,5 +123,19 @@
       document.body.appendChild(script);
 
     </script>
+<div class="webgl-content">
+  <div id="unityContainer" style="width: 100vw; height: 100vh; margin: auto"></div>
+</div>
+<script>
+  window.onresize = adjuest;
+  function adjuest() {
+    var divCon = document.getElementById("unityContainer");
+    var canvas = document.getElementById("#canvas");
+    divCon.style.width = "100vw";//window.innerWidth + "px";
+    divCon.style.height = "100vh";//window.innerHeight + "px";
+    canvas.style.width = "100vw";//window.innerWidth + "px";
+    canvas.style.height = "100vh"//window.innerHeight + "px";
+  }
+</script>
   </body>
 </html>
